@@ -1,0 +1,225 @@
+        /* Imported fonts */
+        @font-face {
+            font-family: Nanami Rounded Outline;
+            src: url(Nanami-Rounded-Outline.otf);
+        }
+
+        @font-face {
+            font-family: Raleway SemiBold;
+            src: url(Raleway-SemiBold.ttf);
+        }
+
+        @media screen and (min-width: 1025px) {
+            body {
+                margin: 0 auto;
+
+                background: radial-gradient(ellipse at top right, rgba(255, 167, 12, 0.8),
+                    rgba(255, 127, 4, 0.8),
+                    rgba(241, 4, 68, 0.8),
+                    rgba(210, 0, 107, 0.8)),
+                    url(africa.png) no-repeat center center;
+                /*the center center means center horizontal & vertical- thereby aligning it in the centre*/
+
+                background-attachment: fixed;
+                color: white;
+            }
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 1024px) {
+            body {
+                margin: 0 auto;
+
+                background: radial-gradient(ellipse at top right, rgba(255, 167, 12, 0.8),
+                    rgba(255, 127, 4, 0.8),
+                    rgba(241, 4, 68, 0.8),
+                    rgba(210, 0, 107, 0.8)), no-repeat;
+
+                background-attachment: fixed;
+                color: white;
+            }
+        }
+
+
+            /* ---------------------------------------The Navbar-------------------------------- */
+            @media screen and (min-width: 1025px) {
+                .nav {
+                    width: 100%;
+                    height: 80px;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 1024px) {
+                .nav {
+                    width: 100%;
+                    height: 10%;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            /* --------------------------------The navbar logo-------------------------------------- */
+
+            /* Setting the width to auto and height 100% ensures the logo stays within the div it's been set in as opposed to covering the screen */
+            @media screen and (min-width: 1025px) {
+                .nav img {
+                    width: auto;
+                    height: 85%;
+                    margin-left: 25px;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 1024px) {
+                .nav img {
+                    width: 5.5rem;
+                    height: 3rem;
+                    margin-left: 0.5rem;
+                    position: relative;
+                }
+            }
+
+            /* -----------------------------------------The navbar icons----------------------------------- */
+            @media screen and (min-width: 1025px) {
+                .icons {
+                    float: right;
+                    margin: 20px 25px 0 0;
+                }
+
+
+                .icons a {
+                    padding: 10px;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .icons a:hover {
+                    color: #B5003A;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 1024px) {
+                .icons {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .icons a {
+                    padding: 0.5rem;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .icons a:hover {
+                    color: rgb(219, 112, 24);
+                }
+            }
+
+
+            /* ------------------------------------------The Countdown Clock--------------------------------- */
+            @media screen and (min-width: 1025px) {
+                .ctd-cnt {
+                    text-align: center;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 1024px) {
+                .ctd-cnt {
+                    text-align: center;
+                }
+            }
+
+
+            /* ----------------------------------------Some Event ---------------------------------*/
+            @media screen and (min-width: 1025px) {
+                .ctd-cnt img {
+                    width: auto;
+                    height: 195px;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+                .ctd-cnt img {
+                    width: auto;
+                    height: 10rem;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                .ctd-cnt img {
+                    width: auto;
+                    height: 220px;
+                }
+            }
+            /* ----------------------------------------The clock itself------------------------------------ */
+            @media screen and (min-width: 1025px) {
+                #countdown {
+                    font-family: "Nanami Rounded Outline", Quicksand, "Avant Garde", "Trebuchet MS", Helvetica, sans-serif;
+                    font-weight: 300;
+                    font-size: 85px;
+                }
+            }
+
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                #countdown {
+                    font-family: "Nanami Rounded Outline", Quicksand, "Avant Garde", "Trebuchet MS", Helvetica, sans-serif;
+                    font-weight: 300;
+                    font-size: 6rem;
+                    margin-top: -2px;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+                #countdown {
+                    font-family: "Nanami Rounded Outline", Quicksand, "Avant Garde", "Trebuchet MS", Helvetica, sans-serif;
+                    font-weight: 300;
+                    font-size: 3.8rem;
+                }
+            }
+
+            /* ---------------------The buying paragraph------------------------ */
+            @media screen and (min-width: 1025px) {
+                .reminder {
+                    text-align: center;
+                    font-family: "Raleway SemiBold", Helvetica, sans-serif;
+                }
+
+                .reminder a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .reminder a:hover {
+                    color: #B5003A;
+                    text-decoration: underline;
+                }
+
+                #cop {
+                    font-size: .75rem;
+                }
+            }
+
+            @media screen and (min-width: 0px) and (max-width: 1024px) {
+                .reminder {
+                    text-align: center;
+                    margin-top: -10px;
+                    font-family: Raleway, "Avant Garde", "Trebuchet MS", Helvetica, sans-serif;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    padding: 0 1em 0 1em;
+                }
+
+                .reminder a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                .reminder a:hover {
+                    color: #B5003A;
+                    text-decoration: underline;
+                }
+
+                #cop {
+                    font-size: .75rem;
+                }
+            }
